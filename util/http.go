@@ -102,7 +102,6 @@ func HTTPPostContext(ctx context.Context, uri string, data []byte, header map[st
 	if err != nil {
 		return nil, err
 	}
-
 	for key, value := range header {
 		request.Header.Set(key, value)
 	}
